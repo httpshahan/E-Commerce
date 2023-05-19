@@ -16,7 +16,8 @@ const CartItem = ({ items }) => {
           <img src={image} alt={title} className="max-w-[80px]" />
         </div>
         <div>
-          <Link to={`/product/${id}`}>
+          <Link to={`/product/${id}`}
+          className="hover:border-b-2">
           {title}
           </Link>
           {/* <h3 className="text-sm font-medium">{title}</h3> */}
