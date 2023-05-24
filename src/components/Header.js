@@ -15,6 +15,7 @@ const Header = () => {
       window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
     })
   })
+  
   return (
     <header
       className={`${
@@ -22,9 +23,9 @@ const Header = () => {
       } fixed w-full z-10 transition-all duration-300`}
     >
       <div className="flex container mx-auto justify-between items-center h-full">
-        <div>
+        <Link to={'/'}>
           <img src={Logo} alt="logo" className="w-[40px]" />
-        </div>
+        </Link>
 
         <div
           onClick={() => setIsOpen(!isOpen)}

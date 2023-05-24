@@ -14,7 +14,7 @@ const Product = ({ product }) => {
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
         <div className="w-full h-full flex justify-center items-center">
           {/* images */}
-          <div className="w-[200px] mx-auto flex justify-center items-cener">
+          <div className="w-[200px] mx-auto flex justify-center items-center">
             <img
               src={image}
               alt={title}
