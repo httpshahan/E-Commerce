@@ -22,11 +22,15 @@ const Header = () => {
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
       } fixed w-full z-10 transition-all duration-300`}
     >
+
+      {/* logo  */}
       <div className="flex container mx-auto justify-between items-center h-full">
         <Link to={'/'}>
           <img src={Logo} alt="logo" className="w-[40px]" />
         </Link>
 
+
+        {/* cart icon */}
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
@@ -38,6 +42,8 @@ const Header = () => {
             </span>
           </div>
         </div>
+
+        
       </div>
     </header>
   );
